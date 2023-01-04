@@ -1,0 +1,46 @@
+site_name: Branch and Cloud Connector Lab Guide
+site_url: http://127.0.0.1:8000
+
+theme:
+# Installed themes: material, rtd-dropdown, windmill, windmill-dark, custommill, bootstrap, bootswatch, bootstrap386, psinder, bootstrap4, gitbook, ivory
+  name: material
+  custom_dir: overrides
+  # include_sidebar: false
+  palette:
+    #scheme: slate
+    scheme: default
+  features:
+    #- navigation.instant
+    - toc.integrate
+    - content.code.annotate
+
+plugins:
+  - search:
+  - print-site:
+
+markdown_extensions:
+  - toc:
+      toc_depth: 4
+  - attr_list
+  - codehilite:
+      use_pygments: False
+
+extra_javascript: [scripts/extra.js]
+extra_css: [scripts/extra.css]
+
+extra:
+  analytics:
+    provider: google
+    # https://analytics.google.com/analytics/web/?authuser=1#/p308778054/reports/intelligenthome
+    property: G-1BY6PXEG0D
+
+nav:
+  - Start Here: 'index.md'
+  - Cloud Connector:
+    - On AWS: './CloudConnector/AWS.md'
+    - On Azure: './CloudConnector/Azure.md'
+    - On AWS using Terraform: './CloudConnector/AWS_via_Terraform.md'
+  - Branch Connector: './BranchConnector.md'
+  - Misc Notes:
+    - Delete Connector Deployments: './MiscNotes/DeleteOldDeployments.md'
+    - Import OVA to Skytap: 'MiscNotes/ImportOVAtoSkytap.md'

@@ -1,0 +1,23 @@
+# base application
+mkdocs
+
+# themes
+mkdocs-material
+mkdocs-rtd-dropdown
+mkdocs-windmill
+mkdocs-windmill-dark
+mkdocs-custommill
+mkdocs-bootstrap
+mkdocs-bootswatch
+mkdocs-bootstrap386
+mkdocs-psinder
+mkdocs-bootstrap4
+mkdocs-gitbook
+mkdocs-ivory
+
+# extensions/plugins
+mkdocs-nav-enhancements
+mkdocs-section-index
+mkdocs-toc-sidebar-plugin
+mkdocs-minify-plugin
+mkdocs-print-site-plugin

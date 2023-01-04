@@ -1,0 +1,19 @@
+---
+version: '3'
+
+services:
+  mkdocs2nginx:
+    build:
+      context: .
+    environment:
+      - TZ=${TIMEZONE}
+    container_name: ${CONTAINER_NAME}
+    hostname: ${CONTAINER_NAME}
+    restart: unless-stopped
+    ports:
+      - ${EXTERNAL_PORT}:80
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'

@@ -1,0 +1,28 @@
+header img,
+footer img {
+  margin: 0 0 0 0;
+  max-width: 50px;
+}
+
+img.thumbnail {
+  max-width: 10%;
+  width: 100px;
+  display: block;
+  clear: both;
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+  margin: 5px 0 5px 5px;
+  display: block;
+  clear: both;
+}
+
+img.hidden {
+  display: none;
+}
+
+img:hover {
+  cursor:pointer;
+}
